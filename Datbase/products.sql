@@ -1,0 +1,20 @@
+CREATE TABLE `products` (
+  `SKU` varchar(50) NOT NULL,
+  `product_name` varchar(100) NOT NULL,
+  `about_product` text NOT NULL,
+  `product_desc` text NOT NULL,
+  `product_care` text NOT NULL,
+  `product_image1` varchar(300) NOT NULL,
+  `product_image2` varchar(300) NOT NULL,
+  `product_image3` varchar(300) NOT NULL,
+  `product_image4` varchar(300) NOT NULL,
+  `product_image5` varchar(300) NOT NULL,
+  `price` varchar(5) NOT NULL,
+  `coupon_code` varchar(10) DEFAULT NULL,
+  `product_url` varchar(400) NOT NULL,
+  `product_varieties` varchar(50) DEFAULT NULL,
+  `color` text NOT NULL,
+  `size_for_trial` text NOT NULL,
+  PRIMARY KEY (`SKU`),
+  KEY `product_varieties` (`product_varieties`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1
